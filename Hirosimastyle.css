@@ -1,0 +1,45 @@
+i { 
+  font-style: italic;
+}
+.subrayado
+{
+	text-decoration-line: underline;
+	text-decoration-color: red;
+}
+body
+{
+	background-image: url("https://thumbs.dreamstime.com/b/textura-blanca-fondo-y-concepto-blancos-de-la-abstracci%C3%B3n-de-la-textura-88220518.jpg");
+}
+.fondo1
+{
+	background-color: lightblue;
+}
+h1{
+	color: red;
+	text-align: center;
+}
+h2{
+	font-size: 50px;
+}
+h3{
+	font-size: 30px;
+}
+span{
+	font-weight:bold;
+}
+td{
+	text-align: center;
+	width: 50%;
+
+}
+.imagen1{
+	width: 550px; 
+	height: 400px;
+	display: block;
+}
+.imagen2{
+	width: 600px;
+	 height: 700px;
+	 display: block;
+}
+</style>
