@@ -1,0 +1,194 @@
+<h1><u> Primer Ejercicio </u></h1>
+<h2> Se quiere construir un jardín de 1 m de ancho alrededor de una fuente circular de 4 m de diámetro. Para rodear el jardín con una valla, ¿cuántos m lineales son necesarios?</h2> 
+<form>
+	<input name="Radio fuente" id="f" value="4" placeholder="Fuente" onkeyup="determinar()"/> 
+	<input name="Radio jardin"id="j" value="1" placeholder="Jardín" onkeyup="determinar()"/>
+	<input name="Metros lineales"id="ml" value="10" placeholder="Metros lineales" onkeyup="determinar()"/> 
+	<button onclick="resolver()">
+Calcular</button>
+</form>
+</div>
+
+<div id="m" style="padding:20px;">
+<strong>Resultado</strong>: Seria una valla de 10m
+</div>
+
+<script>
+function determinar(){
+	f=document.getElementById("f").value;
+	j=document.getElementById("j").value;
+	ml=document.getElementById("ml").value;
+	f=parseInt(f);
+	j=parseInt(j);
+	m=parseInt(m);
+	ml=parseInt(ml);
+	c=parseInt(c);
+	c=Math.round((f+f)+(j+j));
+	ml=Math.round(c);
+	document.getElementById("m").innerHTML=m+" Metros";
+	document.getElementById("c").innerHTML=c+" m2 de cesped";
+} determinar();
+</script>
+
+
+<?php
+if(isset($_GET['m'])){
+$f = $_GET['f'];
+$j = $_GET['j'];
+$ml = $_GET['ml'];
+$m = $_GET['m'];
+$c = $_GET['c'];
+echo $Math.round(($f+$f)+($j+$j);
+echo $Math.round($c);
+}
+
+?>
+<h1><u> Segundo Ejercicio </u><h1/>
+<h2> Una pirámide cuadrada tiene por perímetro de la base 60 cm. Calcula el volumen si la altura es de 25 cm </h2>
+<form>
+	Base <input id="j" name="j" value="0.60" placeholder="area" onkeyup="calcular()" />
+	Altura <input id="k" name="k" value="25" placeholder="lado" onkeyup="calcular()"/>
+	<button onclick="calcular()"> Calcular </button>
+</form>
+<div id="l" style="
+	padding:15px;
+	">
+	Resultado
+</div>
+<script>
+
+	function calcular(){
+		j=document.getElementById("j").value;
+		k=document.getElementById("k").value;
+		m=((j)/4)*0.15;
+		l=((1/3)*m)*k;
+		document.getElementById('l').innerHTML= l +' m^3';
+		}calcular();
+</script>
+<?php
+	if(isset($_GET)) print_r($_GET);
+?>
+<h1><u> Tercer Ejercicio </u><h1/>
+<h2> Entre unos amigos compran un regalo de cumpleaños teniendo que pagar 12,40 cada uno. Se incorporan cuatro amigos más y entonces ahora aportan 9,30 cada uno. Calcula el valor del regalo y cuántos amigos eran al principio.</h2>
+<form style="
+					padding-top:10px;
+					padding-bottom:50px;
+					padding-left: 100px;
+					">
+					<input id="Pago1" name="Pago1" placeholder="Pago1" value="12.40" onkeyup="calcular3()"/> 
+					<input id="Pago2" name="Pago2" placeholder="Pago2" value="9.30" onkeyup="calcular3()"/> 
+					<input id="increm" name="increm" placeholder="Amigos añadidos" value="4" onkeyup="calcular3()"/> 
+						<div style="
+									height:1em;
+									">
+						</div>
+					<button onclick="calcular3()"> Calcular </button>
+				</form>
+						</div>
+					<span style="
+								font-weight:bold;
+								">
+						Resultado:
+					</span>
+					<div id="am+reg" style="
+								display: inline-block;
+									">
+					Resultado
+					</div>
+					<script>
+					function calcular3() {
+						Pago1=document.getElementById('Pago1').value;
+						Pago2=document.getElementById('Pago2').value;
+						increm=document.getElementById('increm').value;
+						ap=Math.round((increm*Pago2)/(Pago1-Pago2));
+						reg=ap*Pago1;
+						document.getElementById('am+reg').
+						innerHTML= 'Eran '+ap+' amigos al principio, y el precio del regalo es '+reg+ '€.';
+					}
+					calcular3();
+					</script>
+						<div style="
+									height:1em;">
+						</div>
+					<?php
+					if(isset (
+						$_GET['Pago1'])) {$Pago1=$_GET['Pago1'];
+						$Pago2=$_GET['Pago2']; 
+						$increm=$_GET['increm'];
+						$ap=round(($increm*$Pago2)/($Pago1-$Pago2));
+						$reg=$ap*$Pago1;
+						echo 'Resultado: '.'Eran '.$ap.' amigos al principio, y el precio del regalo es '.$reg.'€.';
+						}
+					?>
+				</div>
+						<div style="
+										height:2em;">
+						</div>
+						<div style="
+									padding:10px;
+									display:inline-block;
+									width:696.46px;
+									border-style: inset;
+									">
+			<h2 style="
+						color:#F7819F;
+						text-decoration: underline;
+						">
+<h1><u> Cuarto Ejercicio </u><h1/>
+<h2> Se dispone de un cartón cuadrado de 50 cm de lado para construir una caja sin tapa a partir de ese cartón. Para ello, se corta un cuadrado de x cm de lado en cada una de las esquinas. Halla el valor de x para que el volumen de la caja sea máximo y calcula dicho volumen
+</h2>
+	<form style="
+							padding-top:10px;
+							padding-bottom:50px;
+							padding-left: 100px;
+							">
+					<input id="Lado" name="Lado" placeholder="Lado" value="50" onkeyup="calcular4()"/>
+						<div style="
+									height:1em;">
+						</div>
+					<button onclick="calcular4()"> Calcular </button>
+				</form>
+					<div style="
+									height:1em;">
+						</div>
+					<span style="
+								font-weight:bold;
+								">
+						Resultado:
+					</span>
+						<div id="volum4" style="
+												display: inline-block;
+												">
+							Resultado
+						</div>
+					<script>
+					function calcular4(){
+						Lado=document.getElementById('Lado').value;
+						x4= Lado/6;
+						x4=Math.round(x4*100)/100;
+						v4= x4*(Math.pow((Lado-(2*x4)),2));
+						v4=Math.round(v4*100)/100;
+						document.getElementById('volum4').
+						innerHTML='El valor de X será '+x4+' cm, y el volumen máximo será '+v4+' cm³.';
+						}
+						calcular4();
+					</script>
+						<div style="
+										height:1em;">
+						</div>
+					<?php
+								if(isset (
+						$_GET['Lado'])) {$Lado=$_GET['Lado'];
+						$x4=$Lado/6;
+						$x4=round($x4,2);
+						$v4=$x4*(pow(($Lado-(2*$x4)),2));
+						$v4=round($v4,2);
+						echo 'Resultado: El valor de X será '.$x4.' cm, y el volumen máximo será '.$v4.' cm³.';
+						}
+					?>
+					</div>
+						<div style="
+										height:1em;">
+							</div>
+		</body>
+	</html>
